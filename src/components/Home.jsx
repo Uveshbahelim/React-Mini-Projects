@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -10,6 +9,10 @@ const Home = () => {
     {
       name: "Todo App",
       className: "ri-todo-line",
+    },
+    {
+      name: "Expense Tracker",
+      className: "ri-numbers-line",
     },
   ].sort((a, b) => a.name.localeCompare(b.name));
   return (
