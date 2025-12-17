@@ -18,6 +18,10 @@ const Home = () => {
       name: "Ecommerce Page",
       className : "ri-shopping-cart-line"
     },
+    {
+      name: "Notes App",
+      className : "ri-sticky-note-line"
+    },
   ].sort((a, b) => a.name.localeCompare(b.name));
   return (
     <section className="min-h-screen w-full bg-gray-100 flex flex-col gap-6 py-6 items-center">
@@ -30,7 +34,7 @@ const Home = () => {
             <div className="bg-white shadow-[0_5px_15px_rgba(0,0,0,0.1)] text-center py-5 px-6 rounded-md w-[250px] h-full flex flex-col justify-center items-center transition-all ease-linear hover:scale-90 cursor-pointer hover:shadow-[0_5px_15px_rgba(0,0,0,0.2)]">
               <div className="mt-3">
                 <i
-                  className={`${card.className} text-black p-5 border-2 border-black rounded-full text-[40px]`}
+                  className= {`${card.className} text-black p-5 border-2 border-black rounded-full text-[40px]`}
                 ></i>
               </div>
               <h2 className="font-semibold text-[20px] pt-5">{card.name}</h2>

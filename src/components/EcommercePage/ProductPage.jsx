@@ -34,8 +34,8 @@ const relatedProductsData = [
 ];
 
 function ProductPage() {
-    const [selectedColor, setSelectedColor] = useState(productData.colors[0]);
-    const [selectedSize, setSelectedSize] = useState(productData.sizes[0]);
+    const [selectedColor, setSelectedColor] = useState(productData.colors?.[0] ?? {});
+    const [selectedSize, setSelectedSize] = useState(productData.sizes?.[0] ?? "");
     const [quantity, setQuantity] = useState(1);
 
     const handleAddToCart = () => {
@@ -80,6 +80,7 @@ function ProductPage() {
                         />
                     </div>
                     <button
+                        type="button"
                         onClick={handleAddToCart}
                         className="mt-6 w-full bg-blue-700 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-800 transition duration-300 flex items-center justify-center space-x-2"
                     >

@@ -37,6 +37,7 @@ function ProductOptions({
                 <div className="flex flex-wrap gap-2">
                     {sizes.map((size) => (
                         <button
+                            type="button"
                             key={size}
                             className={`px-4 py-2 rounded-md border-2 transition-all duration-200
                                 ${selectedSize === size
@@ -56,6 +57,7 @@ function ProductOptions({
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Quantity</h3>
                 <div className="flex items-center border border-gray-300 rounded-md w-32">
                     <button
+                        type="button"
                         onClick={() => setQuantity(prev => Math.max(1, prev - 1))}
                         className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-l-md"
                     >
@@ -65,6 +67,7 @@ function ProductOptions({
                         {quantity}
                     </span>
                     <button
+                        type="button"
                         onClick={() => setQuantity(prev => prev + 1)}
                         className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-r-md"
                     >

@@ -16,7 +16,7 @@ function RelatedProducts({ products }) {
                         <h3 className="text-md font-semibold text-gray-700">{product.name}</h3>
                         <p className="text-lg font-bold text-gray-900 mt-1">${product.price.toFixed(2)}</p>
                         {/* Optional: Add a quick view or add to cart button */}
-                        <button className="mt-2 text-blue-600 hover:text-blue-800 text-sm">View Product</button>
+                        <button type="button" className="mt-2 text-blue-600 hover:text-blue-800 text-sm">View Product</button>
                     </div>
                 ))}
             </div>

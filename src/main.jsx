@@ -13,6 +13,7 @@ import {
   CurrencyConverter,
   ExpenseTracker,
   EcommercePage,
+  NotesApp,
   Home,
 } from "./components/index.js";
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="currency-converter" element={<CurrencyConverter />} />
       <Route path="expense-tracker" element={<ExpenseTracker />} />
       <Route path="ecommerce-page" element={<EcommercePage />} />
+      <Route path="notes-app" element={<NotesApp />} />
     </Route>
   )
 );
