@@ -23,8 +23,7 @@ const router = createBrowserRouter(
       <Route path="todo-app" element={<Todo />} />
       <Route path="currency-converter" element={<CurrencyConverter />} />
       <Route path="expense-tracker" element={<ExpenseTracker />} />
-      <Route path="Ecommerce-page"  element={<EcommercePage />} />
-
+      <Route path="ecommerce-page" element={<EcommercePage />} />
     </Route>
   )
 );
